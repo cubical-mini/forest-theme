@@ -26,7 +26,7 @@
       <xsl:apply-templates select="@* | node()" />
     </xsl:element>
   </xsl:template>
-  
+
   <xsl:template match="mml:*">
     <xsl:element namespace="http://www.w3.org/1998/Math/MathML" name="{local-name()}">
       <xsl:apply-templates select="@* | node()" />
@@ -89,9 +89,7 @@
 
 
   <xsl:template match="f:embedded-tex">
-    <center>
-      <img src="resources/{@hash}.svg" />
-    </center>
+    <img src="resources/{@hash}.svg" />
   </xsl:template>
 
   <xsl:template match="f:error | f:info">
