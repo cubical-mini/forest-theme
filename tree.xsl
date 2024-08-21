@@ -284,6 +284,12 @@
     </footer>
   </xsl:template>
 
+  <xsl:template match="f:mainmatter//f:backmatter">
+  </xsl:template>
+
+  <xsl:template match="f:backmatter//f:backmatter">
+  </xsl:template>
+
   <xsl:template match="f:tree[f:mainmatter[*] or not(@hidden-when-empty = 'true')]">
     <section>
       <xsl:attribute name="lang">
