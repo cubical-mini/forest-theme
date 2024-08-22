@@ -5,12 +5,11 @@
  <!-- The purpose of this module is to perform flattening of nested links. -->
  <xsl:template match="f:link">
   <span class="link {@type}">
-   <xsl:apply-templates />
+   <xsl:apply-templates mode="link-flattening" />
   </span>
  </xsl:template>
 
- <!-- TODO: the link flattening doesn't work at all if you have some child elements... it is necessary to come up with a new design for this. -->
- <xsl:template match="f:link//text()">
+ <xsl:template match="f:link//node()[not(f:link)]" mode="link-flattening">
   <a href="{ancestor::f:link[1]/@href}">
    <xsl:choose>
     <xsl:when test="ancestor::f:link[1]/@addr">
@@ -28,7 +27,7 @@
      </xsl:attribute>
     </xsl:otherwise>
    </xsl:choose>
-   <xsl:value-of select="." />
+   <xsl:apply-templates select="." />
   </a>
  </xsl:template>
 
