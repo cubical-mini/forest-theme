@@ -9,6 +9,7 @@
   </span>
  </xsl:template>
 
+ <!-- TODO: the link flattening doesn't work at all if you have some child elements... it is necessary to come up with a new design for this. -->
  <xsl:template match="f:link//text()">
   <a href="{ancestor::f:link[1]/@href}">
    <xsl:choose>
