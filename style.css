@@ -520,7 +520,7 @@ a.bullet:hover,
 }
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: inherit;
 }
 
