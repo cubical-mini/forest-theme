@@ -1,6 +1,6 @@
 .Agda {
   --agda-fg: #2b3137;
-  --agda-muted: #68717a;
+  --agda-muted: #7f9098;
   --agda-slate: #46515b;
   --agda-steel: #35617d;
   --agda-steel-bright: #2f6f99;
@@ -16,12 +16,12 @@
 /* Aspects. */
 .Agda .Background    {}
 .Agda .Markup        { color: var(--agda-fg); }
-.Agda .Comment       { color: var(--agda-muted); font-style: italic; }
+.Agda .Comment       { color: var(--agda-muted); }
 .Agda .Keyword       { color: var(--agda-steel); font-weight: 700; }
 .Agda .String        { color: #6f7882; }
 .Agda .Number        { color: var(--agda-steel-bright); }
 .Agda .Symbol        { color: var(--agda-ink); }
-.Agda .PrimitiveType { color: var(--agda-steel-bright); font-weight: 600; }
+.Agda .PrimitiveType { color: var(--agda-steel-bright); font-weight: 1200; }
 .Agda .Pragma        { color: var(--agda-muted); }
 .Agda .Operator      { color: var(--agda-slate); font-weight: 600; }
 .Agda .Hole          { background: var(--agda-mark-soft); }
