@@ -6,6 +6,7 @@
   --agda-steel-bright: #2f6f99;
   --agda-ink: #2a3945;
   --agda-amber: #9a7440;
+  --agda-amber-deep: #6f6050;
   --agda-link-hover: rgba(86, 128, 159, 0.25);
   --agda-mark-soft: rgba(121, 154, 181, 0.25);
   --agda-mark-warn: rgba(184, 136, 82, 0.35);
@@ -29,7 +30,7 @@
 /* NameKinds. */
 .Agda .Bound                  { color: var(--agda-fg); }
 .Agda .Generalizable          { color: var(--agda-fg); }
-.Agda .InductiveConstructor   { color: var(--agda-fg); }
+.Agda .InductiveConstructor   { color: var(--agda-amber-deep); }
 .Agda .CoinductiveConstructor { color: var(--agda-slate); }
 .Agda .Datatype               { color: var(--agda-steel-bright); font-weight: 600; }
 .Agda .Field                  { color: var(--agda-slate); }
