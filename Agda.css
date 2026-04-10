@@ -1,4 +1,11 @@
+@font-face {
+  font-display: swap;
+  font-family: 'IBM Plex Mono';
+  src: url('/core/fonts/IBM-plex-mono.woff2') format('woff2');
+}
+
 .Agda {
+  font-family: 'IBM Plex Mono', monospace;
   --agda-fg: #2b3137;
   --agda-muted: #7f9098;
   --agda-slate: #46515b;
