@@ -1,0 +1,96 @@
+\title{Short title, representative of solved problem and found solution}
+\taxon{decision}
+\date{YYYY-MM-DD}
+\author{Decision maker}
+
+% \adr{key}{value} is shorthand for \meta{key}{value}. Forester renders
+% each declared key as a row in the header metadata "table" via the
+% templates in metadata.xsl. Unknown keys are silently dropped, so only
+% keys listed there will appear.
+\def\adr[key][value]{\meta{\key}{\value}}
+
+\adr{status}{Proposed}
+\adr{deciders}{List everyone involved in the decision}
+\adr{consulted}{List everyone whose opinions are sought (typically subject-matter experts) and with whom there is two-way communication}
+\adr{informed}{List everyone kept up-to-date on progress and with whom there is one-way communication}
+% \adr{supersedes}{ADR-0001}
+% \adr{superseded-by}{ADR-0123}
+
+\subtree{
+  \title{Context and problem statement}
+  \p{Describe the context and problem statement in two to three sentences,
+  or as an illustrative story. You may articulate the problem as a question.
+  Link to issue trackers or collaboration boards where relevant. Make the
+  scope explicit by calling out the architectural elements (components,
+  connectors, ...) involved.}
+}
+
+\subtree{
+  \title{Decision drivers}
+  \ul{
+    \li{Desired software quality, faced concern, constraint, or force.}
+    \li{Another driver.}
+  }
+}
+
+\subtree{
+  \title{Considered options}
+  \ul{
+    \li{\strong{Option A.} Title of option 1.}
+    \li{\strong{Option B.} Title of option 2.}
+    \li{\strong{Option C.} Title of option 3.}
+  }
+}
+
+\subtree{
+  \title{Decision outcome}
+  \p{Chosen option: \strong{Option A}, because it is the only option that
+  meets the k.o. criterion, resolves the force, or comes out best overall
+  (see the pros and cons below).}
+
+  \subtree{
+    \title{Consequences}
+    \ul{
+      \li{\strong{Good}, because {positive consequence: improvement of one or more desired qualities}.}
+      \li{\strong{Bad}, because {negative consequence: compromise of one or more desired qualities}.}
+    }
+  }
+
+  \subtree{
+    \title{Confirmation}
+    \p{Describe how implementation or compliance of this ADR can be confirmed.
+    Is there an automated or manual fitness function? A code review? An
+    architectural test (e.g.\ ArchUnit)? State it explicitly here.}
+  }
+}
+
+\subtree{
+  \title{Pros and cons of the options}
+
+  \subtree{
+    \title{Option A}
+    \p{Example, description, or pointer to more information.}
+    \ul{
+      \li{\strong{Good}, because {argument a}.}
+      \li{\strong{Good}, because {argument b}.}
+      \li{\strong{Neutral}, because {argument c}.}
+      \li{\strong{Bad}, because {argument d}.}
+    }
+  }
+
+  \subtree{
+    \title{Option B}
+    \p{Example, description, or pointer to more information.}
+    \ul{
+      \li{\strong{Good}, because {argument a}.}
+      \li{\strong{Neutral}, because {argument b}.}
+      \li{\strong{Bad}, because {argument c}.}
+    }
+  }
+}
+
+\subtree{
+  \title{More information}
+  \p{Additional evidence, team agreement, realization plan, and review
+  triggers belong here. Cross-link to related ADRs and external resources.}
+}

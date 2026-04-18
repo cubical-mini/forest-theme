@@ -162,4 +162,49 @@
     </li>
   </xsl:template>
 
+  <!-- ADR (Architectural Decision Record) metadata. Rendered as rows of
+       an HTML table assembled in tree.xsl. See adr-template.tree. -->
+
+  <xsl:template match="f:meta[@name='status']">
+    <tr class="adr-row">
+      <th scope="row">Status</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="f:meta[@name='deciders']">
+    <tr class="adr-row">
+      <th scope="row">Deciders</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="f:meta[@name='consulted']">
+    <tr class="adr-row">
+      <th scope="row">Consulted</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="f:meta[@name='informed']">
+    <tr class="adr-row">
+      <th scope="row">Informed</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="f:meta[@name='supersedes']">
+    <tr class="adr-row">
+      <th scope="row">Supersedes</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="f:meta[@name='superseded-by']">
+    <tr class="adr-row">
+      <th scope="row">Superseded by</th>
+      <td><xsl:apply-templates /></td>
+    </tr>
+  </xsl:template>
+
 </xsl:stylesheet>

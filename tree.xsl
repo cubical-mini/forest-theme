@@ -246,6 +246,19 @@
           <xsl:apply-templates select="f:meta[@name='slides']" />
           <xsl:apply-templates select="f:meta[@name='video']" />
         </ul>
+        <xsl:variable name="adr-meta" select="f:meta[@name='status' or @name='deciders' or @name='consulted' or @name='informed' or @name='supersedes' or @name='superseded-by']" />
+        <xsl:if test="$adr-meta">
+          <table class="adr-table">
+            <tbody>
+              <xsl:apply-templates select="f:meta[@name='status']" />
+              <xsl:apply-templates select="f:meta[@name='deciders']" />
+              <xsl:apply-templates select="f:meta[@name='consulted']" />
+              <xsl:apply-templates select="f:meta[@name='informed']" />
+              <xsl:apply-templates select="f:meta[@name='supersedes']" />
+              <xsl:apply-templates select="f:meta[@name='superseded-by']" />
+            </tbody>
+          </table>
+        </xsl:if>
       </div>
     </header>
   </xsl:template>

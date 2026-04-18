@@ -560,6 +560,26 @@ address {
   display: inline
 }
 
+.adr-table {
+  border-collapse: collapse;
+  margin: 0.75em 0 0 0;
+  font-size: 0.95em;
+}
+
+.adr-table th,
+.adr-table td {
+  border: 1px solid var(--hr-color, #ccc);
+  padding: 0.25em 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.adr-table th {
+  font-weight: 600;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.03);
+}
+
 img {
   object-fit: cover;
   max-width: 100%;
